@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="overflow-x-hidden">
+  <head>
+    <title>Protein Wali</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="font-sans">
+    <!-- Offer / sale message -->
+    <div class="offer-message-section relative">
+      <div
+        class="h-16 bg-yellow-200 flex justify-center items-center px-4 py-2 sm:p-2"
+      >
+        <div
+          class="text-xs sm:text-sm md:text-lg flex justify-center items-center gap-1"
+        >
+          <p class="text-center">
+            <span class="font-bold">Sale🎉</span>50% off on 2lbs protien off on
+            2lbs protien off on 2lbs protien
+          </p>
+        </div>
+      </div>
+      <button
+        class="offer-msg-btn font-bold text-yellow-700 sm:text-sm md:text-lg absolute top-0 right-2 sm:right-4"
+      >
+        x
+      </button>
+    </div>
+    <!-- Offer / sale message section end -->
+
+    <!-- ================================================= -->
+
+    <!-- Header Section -->
+    <header
+      class="header-section h-16 lg:h-24 shadow-2xl relative flex items-center justify-between px-4 md:px-8 top-0 z-20 transition-all duration-500"
+    >
+      <!-- Navbar -->
+      <a href="" class="">
+        <img class="w-20 md:w-32" src="./img/logo.png" alt="website logo" />
+      </a>
+
+      <div class="flex justify-center items-center gap-8">
+        <nav class="navbar flex justify-center items-center gap-4 order-last">
+          <div
+            class="search-bar hidden md:flex justify-center items-center gap-1"
+          >
+            <input
+              class="w-40 h-8 rounded-full border px-2 font-thin text-xs border-slate-300 focus:outline-none"
+              type="search"
+            />
+            <button class="bg-slate-100 px-2 py-1 rounded-full">Search</button>
+          </div>
+          <ul class="navbar flex gap-2 md:gap-4 justify-center items-start">
+            <li class="flex justify-center items-center">
+              <ion-icon
+                class="w-4 h-4 md:w-6 md:h-6"
+                name="person-circle-outline"
+              ></ion-icon>
+              <span class="text-xs md:text-base hidden"
+                ><a href="#">Login</a>/<a href="#">Signup</a></span
+              >
+            </li>
+            <li class="flex justify-center items-center relative">
+              <ion-icon
+                class="w-4 h-4 md:w-6 md:h-6"
+                name="heart-outline"
+              ></ion-icon>
+              <span
+                class="absolute -right-2 -top-2 md:-right-1 md:-top-1 rounded-full bg-red-600 w-4 h-4 right p-0 m-0 text-white font-mono text-sm leading-tight text-center"
+                >5
+              </span>
+            </li>
+            <li class="flex justify-center items-center relative">
+              <ion-icon
+                class="w-4 h-4 md:w-6 md:h-6"
+                name="cart-outline"
+              ></ion-icon>
+              <span
+                class="absolute -right-2 -top-2 md:-right-1 md:-top-1 rounded-full bg-red-600 w-4 h-4 right p-0 m-0 text-white font-mono text-sm leading-tight text-center"
+                >5
+              </span>
+            </li>
+          </ul>
+        </nav>
+        <nav
+          id="nav"
+          class="w-full h-screen top-0 left-0 absolute bg-white bg-opacity-90 flex items-center justify-center translate-x-full transition-all duration-500 opacity-0 pointer-events-none lg:pointer-events-auto lg:opacity-100 lg:translate-x-0 lg:bg-transparent lg:w-max lg:h-max lg:static lg:justify-end"
+        >
+          <ul class="text-black flex flex-col lg:flex-row items-center gap-8">
+            <li>
+              <a href="">
+                <img
+                  class="w-20 md:w-32 md:hidden"
+                  src="./img/logo.png"
+                  alt="website logo"
+                />
+              </a>
+            </li>
+            <li
+              class="hover:text-primary-red transition-all duration-500 uppercase font-medium text-base"
+            >
+              <a href="/">Home</a>
+            </li>
+            <li
+              class="hover:text-primary-red transition-all duration-500 uppercase font-medium text-base"
+            >
+              <a href="#about">About</a>
+            </li>
+            <li
+              class="hover:text-primary-red transition-all duration-500 uppercase font-medium text-base"
+            >
+              <a href="#trainers">Shop</a>
+            </li>
+            <li
+              class="hover:text-primary-red transition-all duration-500 uppercase font-medium text-base"
+            >
+              <a href="#gallery">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <button class="button-group bg-transparent lg:hidden order-first">
+        <ion-icon
+          class="w-8 h-8 text-black"
+          id="menu"
+          name="menu-outline"
+        ></ion-icon>
+        <ion-icon
+          class="w-8 h-8 hidden text-black"
+          id="close"
+          name="close-outline"
+        ></ion-icon>
+      </button>
+      <!-- Navbar End -->
+    </header>
+    <!-- Header Section End -->
+
+    <!-- ================================================= -->
+
+    <h1 class="text-3xl text-red-500 font-bold underline">Hello world!</h1>
+    <script src="/src/main.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+<nav
+        class="main bg-white top-0 left-0 flex flex-col items-center absolute lg:bg-none lg:static lg:flex lg:items-center lg:justify-between lg:gap-8"
+      >
+        <ul
+          class="navbar flex flex-col lg:flex-row gap-2 uppercase font-semibold"
+        >
+          <li><a class="text-xs lg:text-base" href="#">Home</a></li>
+          <li><a class="text-xs lg:text-base" href="#">Shop</a></li>
+          <li><a class="text-xs lg:text-base" href="#">Contact</a></li>
+          <li><a class="text-xs lg:text-base" href="#">About</a></li>
+          <li><a class="text-xs lg:text-base" href="#">Blog</a></li>
+        </ul>
+        <div
+          class="search-bar lg:flex lg:justify-center lg:items-center lg:gap-1"
+        >
+          <input
+            class="w-40 h-8 rounded-full border px-2 font-thin text-xs border-slate-300 focus:outline-none"
+            type="search"
+          />
+          <button class="bg-slate-100 px-2 py-1 rounded-full">Search</button>
+        </div>
+        <ul class="navbar lg:flex lg:gap-4 lg:justify-center lg:items-start">
+          <li class="flex lg:justify-center lg:items-center">
+            <ion-icon
+              class="w-6 h-6 hidden"
+              name="person-circle-outline"
+            ></ion-icon>
+            <span><a href="#">Login</a>/<a href="#">Signup</a></span>
+          </li>
+          <li class="flex justify-center items-center relative">
+            <ion-icon class="w-6 h-6" name="heart-outline"></ion-icon>
+            <span
+              class="absolute -right-1 -top-1 rounded-full bg-red-600 w-4 h-4 right p-0 m-0 text-white font-mono text-sm leading-tight text-center"
+              >5
+            </span>
+          </li>
+          <li class="flex justify-center items-center relative">
+            <ion-icon class="w-6 h-6" name="cart-outline"></ion-icon>
+            <span
+              class="absolute -right-1 -top-1 rounded-full bg-red-600 w-4 h-4 right p-0 m-0 text-white font-mono text-sm leading-tight text-center"
+              >5
+            </span>
+          </li>
+        </ul>
+      </nav>
+
+
+ -->
